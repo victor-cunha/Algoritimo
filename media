@@ -1,0 +1,21 @@
+#include<stdio.h>
+ int main(){
+   float nota1, nota2, media;
+   int freq;
+ 	printf("incluir a nota 1:");
+ 	scanf("%f", &nota1);
+ 	printf("incluir a nota 2: ");
+ 	scanf("%f", &nota2);
+ 	printf("digitar frequencia: ");
+ 	scanf("%d", &freq);
+ 	media=(nota1+nota2)/2;
+ 	printf("a sua media e %f" , media);
+ 	if(media>=9.5)
+ 	printf("Parabens ! Aprovado !");
+ 		else printf("Reprovado");	
+ 	
+ 	
+ 	
+ 	
+ 	return 0;
+ }
