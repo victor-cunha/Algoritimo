@@ -3,9 +3,10 @@
 int main(){
 	
 	int a, b ;
-	pritf("digite o valor A:");
+	
+	printf("digite o valor A:");
 	scanf("%d", &a);
-	pritf("digite o valor B:");
+	printf("digite o valor B:");
 	scanf("%d", &B);
 	
 	if(a>b)
