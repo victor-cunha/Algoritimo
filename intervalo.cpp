@@ -1,21 +1,16 @@
 #include<stdio.h>
-    
-	int main(){
-		double numero;
-		printf("incluir o numero:" );
-		scanf("%f" , &numero );
-		 {
-		 if(numero >= && numero <= 25);
-		 printf("intervalo [0,25]");
-		 else if(numero > 25 && numero <=50);
-		 printf("intervalo [25,50]");
-		 else if(numero > 50 && numero <=75);
-		 printf("intervalo [50,75]");
-		 else if(numero > 75 && numero <=100);
-	     printf("intervalo [75,100]");
-	     else printf("fora do intervalo");
-	
-	     return 0;
-	
+
+int main(){
+	int idade;
+		
+	printf("Digite a idade :");
+	scanf("%d", &idade);
+	switch(idade){
+		  case 0 ... 10: printf("crianca\n"); break;
+		  case 11 ... 18: printf("adulto\n"); break;
+		  case 19 ... 60: printf("idoso\n"); break;
+		  case 61 ... 100: printf("zumbi\n"); break;
+		  defautf : printf("Idade invalida\n");
+	}
 	
 }
