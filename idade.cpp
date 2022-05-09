@@ -1,23 +1,43 @@
-#include <stdio.h>
- int main(){
- 	 int idade ;
- 	 printf("digite sua  idade:");
- 	 scanf("%d", &idade);
- 	 
- 	   if (idade > 0 && idade <= 10)
- 	      printf("crianca\n");
- 	      else if (idade > 10 && idade <= 18)
- 	               printf("adolescente\n");
- 	               else if (idade > 18 && idade <= 60)
- 	                        printf("adulto");
- 	                        else if (idade > 60 && idade <= 100)
- 	                                 printf("idoso");
- 	                                 else if (idade >100 && idade <= 150)
- 	                                         printf("zumbi");
- 	                                         else if ("Idade invalida")
- 	                    
+#include<stdio.h>
 
- 	return 0;
- 	
- 	
- }
+int main(){
+	int i ,idade[10],maior=0;
+	float absoluto,soma=0,media ;
+	char escolha ;
+	
+	for (i=0;i<10;i++){
+		printf("coloque a idade :");
+		scanf("%d",&idade[i] );
+		if(idade[i]>=18){
+			maior++;
+		}
+		
+		printf("continuar ou nao :(s,n):");
+		
+		getchar();
+		
+		scanf("%c",&escolha);
+		
+		if(escolha == 'n'){
+			printf("teminou de ler \n:");
+			break;
+		} 	
+	}
+	absoluto = ++i ;
+		
+	for (i=0;i<absoluto;i++){
+		soma = idade[i] + soma;			
+	} 
+	media = soma /absoluto ;
+	printf("media %.2f\n",media);	
+	printf("maiores que 18:%d\n",maior);
+	
+	for (i=0;i<absoluto;i++){
+		if(idade[i] >= 18){
+			printf("posicao:%d\n",i);
+		}
+	}
+				
+	return 0;
+	
+}
